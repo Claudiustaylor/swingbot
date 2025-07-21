@@ -1,0 +1,155 @@
+{
+  "timestamp": "2025-07-21T05:50:07.480Z",
+  "tests": [
+    {
+      "name": "Server Health Check",
+      "status": "PASSED",
+      "message": "Server health: healthy",
+      "data": {
+        "status": "healthy",
+        "timestamp": "2025-07-21T05:50:07.501Z",
+        "uptime": 94.953885645,
+        "version": "1.0.0"
+      },
+      "timestamp": "2025-07-21T05:50:07.506Z"
+    },
+    {
+      "name": "Analysis Status Check",
+      "status": "PASSED",
+      "message": "CoinGecko: Connected, HuggingFace: Disconnected, Analysis Type: Rule-Based",
+      "data": {
+        "success": true,
+        "coingeckoConnected": true,
+        "huggingfaceConnected": false,
+        "cacheSize": 2,
+        "lastAnalysis": "2025-07-21T05:50:07.508Z",
+        "analysisType": "Rule-Based"
+      },
+      "timestamp": "2025-07-21T05:50:07.509Z"
+    },
+    {
+      "name": "Top 5 Coins Analysis",
+      "status": "PASSED",
+      "message": "Found 4 coins, Analysis: ai_powered_real_data, Real data: true",
+      "data": {
+        "coinCount": 4,
+        "analysisType": "ai_powered_real_data",
+        "sampleCoin": {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETHEREUM",
+          "currentPrice": 3771.52,
+          "profitabilityScore": 81,
+          "winRate": 80,
+          "avgReturn": 39.62,
+          "maxDrawdown": 63.36,
+          "volatility": 56.27,
+          "riskLevel": "Medium",
+          "signal": "HOLD",
+          "confidence": 35,
+          "reasoning": "RSI indicates overbought condition; Price above key moving averages (bullish trend); MACD above zero line (bullish momentum); Strong recent gains may indicate overextension; Price near resistance level (potential rejection)",
+          "lastUpdated": "2025-07-21T05:50:09.519Z",
+          "marketCap": 455307949006,
+          "volume24h": 37201778893,
+          "priceChange24h": 3.47824,
+          "priceChange7d": 23.5426,
+          "priceChange30d": 55.70012
+        }
+      },
+      "timestamp": "2025-07-21T05:50:16.222Z"
+    },
+    {
+      "name": "Technical Indicators Validation",
+      "status": "PASSED",
+      "message": "Technical indicators present: true, Values reasonable: true",
+      "data": {
+        "volatility": 56.27,
+        "maxDrawdown": 63.36,
+        "winRate": 80,
+        "signal": "HOLD",
+        "confidence": 35
+      },
+      "timestamp": "2025-07-21T05:50:24.581Z"
+    },
+    {
+      "name": "Signal Generation Test",
+      "status": "PASSED",
+      "message": "Valid signals: 4/4, Has reasoning: 4/4",
+      "data": {
+        "signalDistribution": {
+          "BUY": 0,
+          "SELL": 0,
+          "HOLD": 4
+        },
+        "validSignalCount": 4,
+        "hasReasoning": 4,
+        "totalCoins": 4
+      },
+      "timestamp": "2025-07-21T05:50:32.898Z"
+    },
+    {
+      "name": "Profitability Scoring Test",
+      "status": "PASSED",
+      "message": "Valid scores: 4/4, Sorted correctly: true",
+      "data": {
+        "scores": [
+          {
+            "symbol": "ETHEREUM",
+            "score": 81
+          },
+          {
+            "symbol": "CARDANO",
+            "score": 74
+          },
+          {
+            "symbol": "BINANCECOIN",
+            "score": 70
+          },
+          {
+            "symbol": "BITCOIN",
+            "score": 61
+          }
+        ],
+        "isSorted": true
+      },
+      "timestamp": "2025-07-21T05:50:41.165Z"
+    },
+    {
+      "name": "Real-time Data & Caching",
+      "status": "PASSED",
+      "message": "Data caching working: true, Time difference: 10214ms",
+      "data": {
+        "timestamp1": "2025-07-21T05:50:49.351Z",
+        "timestamp2": "2025-07-21T05:50:59.565Z",
+        "timeDifference": 10214,
+        "isCached": true
+      },
+      "timestamp": "2025-07-21T05:50:59.566Z"
+    },
+    {
+      "name": "API Rate Limiting",
+      "status": "PASSED",
+      "message": "5 requests completed in 11ms - Rate limiting working",
+      "data": {
+        "totalTime": 11,
+        "requestCount": 5
+      },
+      "timestamp": "2025-07-21T05:50:59.578Z"
+    },
+    {
+      "name": "Error Handling",
+      "status": "PASSED",
+      "message": "Error handling working: Returns 404 for invalid endpoints",
+      "data": {
+        "status": 404
+      },
+      "timestamp": "2025-07-21T05:50:59.581Z"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "warnings": 0
+  }
+}
