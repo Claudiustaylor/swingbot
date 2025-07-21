@@ -2,10 +2,10 @@
   "name": "trading-system-backend",
   "version": "1.0.0",
   "description": "Backend server for swing trading system with Pionex API integration",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
